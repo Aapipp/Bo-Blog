@@ -1,0 +1,180 @@
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.fcontainer {
+	display: flex;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 20px;
+	padding: 15px;
+	width: 100%;
+	height: 80px;
+	background-color: #222;
+	box-shadow: 0 7px 15px 0 rgba (0, 0, 0, 0.5);
+}
+.brand {
+	display: flex;
+	flex-direction: row;
+	font-size: 1.5em;
+	padding: 15px;
+	text-transform: capitalize;
+}
+
+.firstname {
+	color: white;
+	font-weight: 700;
+}
+
+.lastname {
+	color: crimson;
+	font-weight: 400;
+	padding-left: 4px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation > li {
+	list-style-type: none;
+	padding: 15px;
+}
+
+.navigation > li > a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+	color: crimson;
+	transition: all 0.3s ease-in-out;
+}
+
+.navigation > li img {
+	width: 50px;
+	height: 50px;
+}
+
+.navigation > li img:hover {
+	width: 65px;
+	height: 65px;
+	transition: all 0.3s ease-in-out;
+}
+
+.active {
+	background-color: crimson;
+	color: white;
+	padding: 15px;
+}
+
+.active:hover {
+	color: white !important;
+}
+
+.photo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	color: #222;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 120px;
+}
+
+.home img {
+	width: 40%;
+	border-radius: 10px;
+}
+
+.home h2 {
+	margin-top: 10px;
+	padding: 5px;
+}
+.home p {
+	padding: 5px;
+}
+
+.tech {
+	display: flex;
+	flex-direction: column;
+
+	width: 80%;
+}
+
+.tech h2 {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.article-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.article {
+	width: 300px;
+	margin: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.article h4 {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.article img > a {
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.navigation > li {
+		padding: 10px;
+	}
+	
+	.navigation > li > a {
+		font-size: 14px;
+	}
+	.wrapper {
+		font-size: 14px;
+		padding: 8px;
+		height: 70px;
+	}
+	.home img {
+		width: 70%;
+	}
+}
